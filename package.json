@@ -1,0 +1,15 @@
+{
+  "name": "MercadoLiebre",
+  "version": "1.0.0",
+  "description": "Aplicacion de MercadoLiebre",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Carlos Mercado <cmercado93@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
