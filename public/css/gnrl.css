@@ -1,0 +1,53 @@
+* {
+    font-family: "Roboto", serif;
+}
+
+.bg-yellow {
+    background-color: #EAC926;
+}
+.bg-blue {
+    background-color: #03264C;
+}
+.bg-light-blue {
+    background-color: #1259c3;
+}
+.bg-dark-gray {
+    background-color: #666;
+}
+.bg-light-grey {
+    background-color: #ebebeb;
+}
+.bg-green {
+    background-color: #39b54a;
+}
+
+header .navbar a.navbar-brand .logo {
+    width: 140px;
+    height: auto;
+}
+
+header .navbar #buscador {
+    font-size: 0.75rem;
+    height: 40px;
+}
+
+.home main .card.product .img {
+    width: 200px;
+    height: auto;
+}
+
+.home main .card.product .divisor-container {
+    position: relative;
+}
+
+.home main .card.product .divisor-container .truck {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+}
+
+.home main .card.product .price-container .price {
+    font-size: 24px;
+}
