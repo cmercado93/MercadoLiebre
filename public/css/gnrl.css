@@ -2,42 +2,128 @@
     font-family: "Roboto", serif;
 }
 
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    color:  #ccc;
+}
+
 .bg-yellow {
     background-color: #EAC926;
 }
+
 .bg-blue {
     background-color: #03264C;
 }
+
 .bg-light-blue {
     background-color: #1259c3;
 }
+
 .bg-dark-gray {
     background-color: #666;
 }
+
 .bg-light-grey {
     background-color: #ebebeb;
 }
+
 .bg-green {
     background-color: #39b54a;
 }
 
-header .navbar a.navbar-brand .logo {
-    width: 140px;
-    height: auto;
+.text-dark-gray {
+    color: #666;
 }
 
-header .navbar #buscador {
+.text-light-grey {
+    color: #ebebeb;
+}
+
+.text-blue {
+    color: #03264C;
+}
+
+.text-light-blue {
+    color: #1259c3;
+}
+
+header .navbar a.navbar-brand .logo {
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    min-width: 70px;
+}
+
+header .navbar #buscador input, header .navbar #buscador span{
     font-size: 0.75rem;
-    height: 40px;
+    height: 35px;
+}
+
+header a {
+    color: #333;
+}
+
+footer .icons {
+    font-size: 1em;
+}
+
+footer .content {
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    font-size: 12px;
+}
+
+.home main .card.product {
+    margin-bottom: 10px;
+    border-color: #ebebeb;
 }
 
 .home main .card.product .img {
-    width: 200px;
+    max-width: 200px;
     height: auto;
+    width: 100%;
+}
+.home main .card.product .price {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.home main .card.product .discount {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.home main .card.product .description {
+    font-size: 16px;
 }
 
 .home main .card.product .divisor-container {
     position: relative;
+}
+
+.home main .card.product .divisor-container hr{
+    border-color: #ebebeb;
 }
 
 .home main .card.product .divisor-container .truck {
@@ -48,6 +134,21 @@ header .navbar #buscador {
     right: 15px;
 }
 
-.home main .card.product .price-container .price {
-    font-size: 24px;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .home main .card.product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+

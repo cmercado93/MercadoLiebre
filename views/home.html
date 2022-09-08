@@ -10,15 +10,30 @@
         <link rel="stylesheet" type="text/css" href="/css/gnrl.css">
     </head>
     <body class="home">
-        <header class="bg-yellow">
-            <div class="container">
+        <header class="bg-yellow text-dark-gray fs-12">
+            <div class="container pb-2">
                 <div class="navbar">
                     <div class="container-fluid">
-                        <div class="d-flex flex-fill">
-                            <a href="" class="navbar-brand"> <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo d-inline-block"> </a>
-                            <div class="input-group"> <input type="text" placeholder="Buscar productos, marcas" style="font-size: 0.75rem;height: 40px;" class="form-control px-3"> <span class="input-group-text" style="font-size: 0.75rem;height: 40px;"><i class="fa-solid fa-magnifying-glass"></i></span> </div>
+                        <div class="d-flex flex-fill me-lg-4">
+                            <div class="row w-100">
+                                <div class="col-3 text-center">
+                                    <a href="" class="navbar-brand">
+                                    <img src="/images/logo-mercado-liebre.svg" alt="Logo" class="logo d-inline-block">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="input-group" id="buscador">
+                                        <input type="text" placeholder="Buscar productos, marcas" class="form-control px-3">
+                                        <span class="input-group-text">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <form class="d-flex" role="search"> <a href="" class="md-a"><i class="fa-solid fa-hand-holding"></i> Comprá en cuotas y sin tarjeta de crédito</a> </form>
+                        <div class="d-flex">
+                            <a href="" class="ms-4"><i class="me-2 fa-solid fa-hand-holding"></i> Comprá en cuotas y sin tarjeta de crédito</a>
+                        </div>
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-md">
@@ -26,15 +41,32 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"> <span class="navbar-toggler-icon"></span> </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"> <a class="nav-item">Ofertas</a> </li>
-                                <li class="nav-item"> <a class="nav-item">Tiendas Oficiales</a> </li>
-                                <li class="nav-item"> <a class="nav-item">Vender</a> </li>
-                                <li class="nav-item"> <a class="nav-item">Ayuda</a> </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="#">Todos los productos</a>
+                                </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="#">Ofertas</a>
+                                </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="#">Tiendas Oficiales</a>
+                                </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="#">Vender</a>
+                                </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="#">Ayuda</a>
+                                </li>
                             </ul>
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item"> <a class="nav-item" href="/register">Creá tu cuenta<i class="fa-solid fa-address-card"></i></a> </li>
-                                <li class="nav-item"> <a class="nav-item" href="/login">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a> </li>
-                                <li class="nav-item"> <a class="nav-item" href="">Mis compras<i class="fa-solid fa-basket-shopping"></i></a> </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="/register">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
+                                </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                                </li>
+                                <li class="nav-item mx-md-1 mx-lg-2">
+                                    <a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -42,11 +74,11 @@
             </div>
         </header>
         <img src="/images/img-home-banner.jpg" alt="img-home-banner" class="banner">
-        <main>
+        <main class="bg-light-grey py-4">
             <div class="container">
-                <h2>Basado en tu última visita</h2>
+                <h2 class="fs-24 text-dark-gray mb-4">Basado en tu última visita</h2>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="d-block m-auto img">
@@ -54,12 +86,15 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 6.770</span> <small class="text-success ms-2 align-self-center">40% OFF</small> </div>
-                                <h5 class="mx-3">Cafetera Moulinex</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 6.770</span>
+                                    <small class="text-success ms-2 align-self-center discount">40% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">Cafetera Moulinex</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" class="d-block m-auto img">
@@ -67,12 +102,15 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 230.000</span> <small class="text-success ms-2 align-self-center">20% OFF</small> </div>
-                                <h5 class="mx-3">MacBook Pro 2019</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 230.000</span>
+                                    <small class="text-success ms-2 align-self-center discount">20% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">MacBook Pro 2019</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" class="d-block m-auto img">
@@ -80,12 +118,15 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 70.500</span> <small class="text-success ms-2 align-self-center">10% OFF</small> </div>
-                                <h5 class="mx-3">Samsung Galaxy S10</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 70.500</span>
+                                    <small class="text-success ms-2 align-self-center discount">10% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">Samsung Galaxy S10</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" class="d-block m-auto img">
@@ -93,15 +134,18 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 23.200</span> <small class="text-success ms-2 align-self-center">5% OFF</small> </div>
-                                <h5 class="mx-3">SmartTv Samsung 43"</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 23.200</span>
+                                    <small class="text-success ms-2 align-self-center discount">5% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">SmartTv Samsung 43"</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h2>Sección de Ofertas</h2>
+                <h2 class="fs-24 text-dark-gray my-4">Sección de Ofertas</h2>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" class="d-block m-auto img">
@@ -109,12 +153,15 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 6.770</span> <small class="text-success ms-2 align-self-center">40% OFF</small> </div>
-                                <h5 class="mx-3">Cafetera Moulinex</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 6.770</span>
+                                    <small class="text-success ms-2 align-self-center discount">40% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">Cafetera Moulinex</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" class="d-block m-auto img">
@@ -122,12 +169,15 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 230.000</span> <small class="text-success ms-2 align-self-center">20% OFF</small> </div>
-                                <h5 class="mx-3">MacBook Pro 2019</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 230.000</span>
+                                    <small class="text-success ms-2 align-self-center discount">20% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">MacBook Pro 2019</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" class="d-block m-auto img">
@@ -135,12 +185,15 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 70.500</span> <small class="text-success ms-2 align-self-center">10% OFF</small> </div>
-                                <h5 class="mx-3">Samsung Galaxy S10</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 70.500</span>
+                                    <small class="text-success ms-2 align-self-center discount">10% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">Samsung Galaxy S10</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6">
                         <div class="card product">
                             <div class="card-body p-0 py-3">
                                 <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" class="d-block m-auto img">
@@ -148,30 +201,39 @@
                                     <hr>
                                     <div class="d-flex text-center border rounded-circle justify-content-center text-success bg-white truck"> <i style="" class="fa-solid fa-truck align-self-center"></i> </div>
                                 </div>
-                                <div class="d-flex price-container mx-3"> <span class="align-self-center price">$ 23.200</span> <small class="text-success ms-2 align-self-center">5% OFF</small> </div>
-                                <h5 class="mx-3">SmartTv Samsung 43"</h5>
+                                <div class="d-flex price-container mx-3">
+                                    <span class="align-self-center price">$ 23.200</span>
+                                    <small class="text-success ms-2 align-self-center discount">5% OFF</small>
+                                </div>
+                                <h5 class="mx-3 mt-2 d-none d-sm-inline description text-dark-gray">SmartTv Samsung 43"</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="container">
+        <footer class="text-dark-gray">
+            <div class="container text-center">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="d-block text-center fs-2"> <i class="fa-solid fa-credit-card"></i> </div>
-                        <h4 class="my-4">Pagá con tarjeta o efectivo</h4>
+                    <div class="col-12 col-lg-4 content">
+                        <div class="d-block text-center fs-2">
+                            <i class="icons text-light-blue fa-solid fa-credit-card"></i>
+                        </div>
+                        <h4 class="my-lg-4">Pagá con tarjeta o efectivo</h4>
                         <p class="text-center">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
                     </div>
-                    <div class="col-4">
-                        <div class="d-block text-center fs-2"> <i class="fa-solid fa-gift"></i> </div>
-                        <h4 class="my-4">Envío gratis desde $ 1.999</h4>
+                    <div class="col-12 col-lg-4 content">
+                        <div class="d-block text-center fs-2">
+                            <i class="icons text-light-blue fa-solid fa-gift"></i>
+                        </div>
+                        <h4 class="my-lg-4">Envío gratis desde $ 1.999</h4>
                         <p class="text-center">Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
                     </div>
-                    <div class="col-4">
-                        <div class="d-block text-center fs-2"> <i class="fa-solid fa-user-shield"></i> </div>
-                        <h4 class="my-4">Seguridad, de principio a fin</h4>
+                    <div class="col-12 col-lg-4 content">
+                        <div class="d-block text-center fs-2">
+                            <i class="icons text-light-blue fa-solid fa-user-shield"></i>
+                        </div>
+                        <h4 class="my-lg-4">Seguridad, de principio a fin</h4>
                         <p class="text-center">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
                     </div>
                 </div>
