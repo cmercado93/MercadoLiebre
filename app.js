@@ -16,6 +16,6 @@ app.get('/register', (req,res) =>{
     res.sendFile((path.join(__dirname, '/views/register.html')));
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Inicio el servidor")
 });
